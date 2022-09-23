@@ -101,19 +101,6 @@ Int(chr)
 unichr = '∑'
 unichr = '\u03a3'
 
-#strings are arrays of chars
-str = "Julia Language"
-str[1]
-str[begin]
-str[end]
-str[end-1]
-str[end÷2]
-str[3:7]
-firstindex(str)
-lastindex(str)
-split(str)
-length(str)
-
 #com unicode fica estranho, cuidado!
 newstr = "αβγ"
 length(newstr)
