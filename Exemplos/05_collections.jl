@@ -44,3 +44,42 @@ sizeof(collect(range(1, 10)))
 #também tem LinRange
 
 #arrays
+arr = [3, "Julia", 2022, 3.42, 'a', 23.1]
+arrfloat = [1.2, 1.3, 3.4]
+arrdouble = Float64[2, 2, 5]
+typeof(arrdouble)
+
+#slicing
+arr[1:2:end]
+
+#mutation
+arr[2] = "Julia lang"
+arr[3:4] = [1, 2]
+
+#pertencimento
+'a' ∈ arr
+issubset(['a', 23.1], arr)
+['a', 23.1] ⊆ arr #\subseteq TAB
+['a', 23.1] ⊊ arr #\subsetneq TAB
+
+#funcoes
+eltype(arr)
+push!(arr, "α")
+pop!(arr)
+popfirst!(arr)
+append!(arr, [1, 2])
+deleteat!(arr, [1, 3, 5])
+insert!(arr, 1, "β")
+
+#strings are arrays of chars
+str = "Julia Language"
+str[1]
+str[begin]
+str[end]
+str[end-1]
+str[end÷2]
+str[3:7]
+firstindex(str)
+lastindex(str)
+split(str)
+length(str)
