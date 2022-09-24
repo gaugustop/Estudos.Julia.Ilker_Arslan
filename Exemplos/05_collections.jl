@@ -83,3 +83,18 @@ firstindex(str)
 lastindex(str)
 split(str)
 length(str)
+
+#Sets
+tup = (3, 5, 7, 7, 8, 9, 10, 10, 11, 12, 12)
+arr = [1, 2, 3, 3, 4, 5, 6, 6, 9, 9, 10, 10, 10]
+A = Set(tup)
+B = Set(arr)
+#funcoes, funcionam para tuplas e arrays também!
+union(tup, arr)
+union(A, B)
+intersect(A, B)
+setdiff(A, B)
+setdiff(B, A)
+symdiff(tup, arr) #não dá erro, mas o resultado é errado!
+symdiff(A, B) #resultado correto!
+symdiff(tup, arr) == symdiff(Set(tup), Set(arr))

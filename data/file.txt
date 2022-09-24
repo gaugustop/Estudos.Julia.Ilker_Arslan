@@ -1,0 +1,3 @@
+Este é um arquivo comum txt para teste
+Essa é a segunda linha do arquivo
+Aqui jaz a terceira linha do arquivo
