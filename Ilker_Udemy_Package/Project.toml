@@ -1,0 +1,4 @@
+name = "Ilker_Udemy_Package"
+uuid = "1b73a42b-a857-4852-b736-322705e8fac3"
+authors = ["Gabriel Pinho <gaugustop@gmail.com>"]
+version = "0.1.0"
