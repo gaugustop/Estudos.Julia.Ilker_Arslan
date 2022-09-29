@@ -54,4 +54,11 @@ end
 nfield(course_data, "Programming")
 nfield(course_data, "Science")
 
-
+#do end block
+#cria uma função anônima e passa como 
+#primeiro argumento da função antes do "do"
+vec = 1:10
+map(x -> x^3, vec)
+map(vec) do x
+    x^3
+end
