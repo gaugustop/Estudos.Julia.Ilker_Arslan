@@ -35,7 +35,7 @@ close(f)
 # 2)
 fname = "data/sample_file.txt"
 open(fname) do file
-    readlines(file)
+    readlines(file);
 end
 
 open(fname) do file
@@ -89,5 +89,17 @@ for file in ["sales", "employees", "products"]
         close(f)
     end
 end
-        
+
+#pega o diretorio atual
+pwd()
+#le os arquivos do diretorio
+readdir()
+#muda de diretorio
+cd()
+#junta caminhos
+joinpath("caminho1","caminho")
+#separa caminhos
+splitpath("caminho1/caminho2")
+#deleta 
+rm(path::AbstractString; force::Bool=false, recursive::Bool=false)
 
